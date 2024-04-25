@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        /* Reset styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            width: 150px; /* Adjust the size of the logo as needed */
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .category-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .category-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="target-logo.png" alt="Target Logo">
+        <h1>Welcome to Target</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Categories</h2>
+        <div class="categories">
+            <a href="products.html" class="category-item">
+                <h3>Electronics</h3>
+                <img src="elecPic.jpeg" style="width: 200px; height: auto;">
+
+            </a>
+            <div class="category-item">
+                <h3>Clothing</h3>
+                <img src="clothingPic.jpeg" style="width: 200px; height: auto;">
+            </div>
+            <div class="category-item">
+                <h3>Home & Kitchen</h3>
+                <img src="homePic.jpeg" style="width: 200px; height: auto;">
+            </div>
+            <div class="category-item">
+                <h3>Beauty & Personal Care</h3>
+                <img src="Beauty.jpeg" style="width: 200px; height: auto;">
+            </div>
+            <div class="category-item">
+                <h3>Toys & Games</h3>
+                <img src="toyPic.jpeg" style="width: 200px; height: auto;">
+            </div>
+            <div class="category-item">
+                <h3>Sports & Outdoors</h3>
+                <img src="outdoorPic.jpeg" style="width: 200px; height: auto;">
+            </div>
+            <div class="category-item">
+                <h3>Books</h3>
+                <img src="bookPic.jpeg" style="width: 200px; height: auto;">
+            </div>
+            <div class="category-item">
+                <h3>Pets</h3>
+                <img src="petPic.jpeg" style="width: 200px; height: auto;">
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Target. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
